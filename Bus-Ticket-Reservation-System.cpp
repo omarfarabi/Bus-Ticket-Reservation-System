@@ -1,11 +1,7 @@
 #include <iostream>
-
 #include <conio.h>
-
 #include <cstdio>
-
 #include <string.h>
-
 #include <cstdlib>
 
 using namespace std;
@@ -130,7 +126,7 @@ void f::allotment()
 
       {
 
-        cout<<"Enter passanger's name: ";
+        cout<<"Enter passanger name: ";
 
         cin>>bus[n].seat[seat/4][(seat%4)-1];
 
@@ -205,7 +201,6 @@ while(n<=p)
 
 {
 
-  vline('*');
 
   cout<<"Bus no: \t"<<bus[n].busn
 
@@ -217,7 +212,7 @@ while(n<=p)
 
   bus[n].to<<"\n";
 
-  vline('*');
+  vline('.');
 
   bus[0].position(n);
 
@@ -324,20 +319,18 @@ void f::avail()
 
   {
 
-    vline('*');
 
     cout<<"Bus no: \t"<<bus[n].busn<<"\nDriver: \t"<<bus[n].driver
 
     <<"\t\tArrival time: \t"<<bus[n].arrival<<"\tDeparture Time: \t"
 
-    <<bus[n].depart<<"\nFrom: \t\t"<<bus[n].from<<"\t\tTo: \t\t\t"
+    <<bus[n].depart<<"\nFrom: \t\t"<<bus[n].from<<"\t\tTo: \t\t"
 
     <<bus[n].to<<"\n";
 
-    vline('*');
+    vline('.');
 
-    vline('_');
-
+   
   }
 
 }
@@ -356,19 +349,19 @@ while(1)
 
     //system("cls");
     cout<<"\n\n";
-    cout<<"\t\t...Bus Ticket Reservation System...";
+    cout<<"\t\t ### Bus Reservation System ###";
 
   cout<<"\n\n";
 
-  cout<<"\t\t\t1.Install\n\t\t\t"
+  cout<<"\t\t\t1. Install\n\t\t\t"
 
-  <<"2.Reservation\n\t\t\t"
+  <<"2. Reservation\n\t\t\t"
 
-  <<"3.Show\n\t\t\t"
+  <<"3. Show Seats\n\t\t\t"
 
-  <<"4.Buses Available \n\t\t\t"
+  <<"4. Buses Available \n\t\t\t"
 
-  <<"5.Exit";
+  <<"5. Exit";
 
   cout<<"\n\t\t\tEnter your choice- ";
 
